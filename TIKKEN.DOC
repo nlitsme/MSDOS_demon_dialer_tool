@@ -1,0 +1,22 @@
+short documentation for TIKKEN:
+
+Usage:
+   tikken u   uninstall
+   tikken c   clear counter
+   tikken t   check installation
+   tikken i   install
+   tikken     install
+
+in the upper right corner of your screen 2 numbers will appear,
+the first is the number of PC-clockticks since the last  'tik'
+
+a switch responding to each tik should be connected to the ACK pin of
+the first printer port.
+
+future : - more configurable port assignment
+         - hide tikker
+
+   send any remarks you got on improving this program to
+
+                 itsme@utopia.hacktic.nl
+
