@@ -1,0 +1,57 @@
+Short documentation for this demon dialer control program
+
+usage:
+  demon         : install on com1
+  demon  u      : uninstalls
+  demon  p2     : install on com2
+  demon  t      : test if installed
+
+DEMON installs itself in the background taking up about 1K of memory
+it intercepts int09 (keyboard)  and int1c(timer)
+
+******************* on/off hook switch ***************************
+
+   Scroll lock toggles on/off hook
+
+   A switch should be connected to the DTR line (D25:pin20  or D9:pin4)
+
+******************* how to dial **********************************
+
+position cursor to start of string, press numeric keypad '5'
+
+x  -> play next char until release of '5'-key
+  'x' can only deal with one character
+
+0123456789*#  : as normal phone
+ abcdefghijk  : shifted
+ . or space   : end of string
+ -            : ignored
+ other        : extra pause
+
+EXAMPLE :  (the '_' is for easy cursor moving in editor : ctrl-left/right)
+
+j0 060220354 j5  _* _# c01231231231e
+
+means go mode 0,  dial 060220354
+go mode 5,  clearforward, seize, dial kp1+0+1231231231+st
+
+j5  xf
+
+means go mode 5,  play 2600Hz while key pressed
+
+future expansions will be :
+  - better timing facilities (now everything is based on the standard
+    pc clock rate (about 55ms)
+        - maybe timing specified by line below cursorline
+        - define timing characteristics for unused characters
+  - numberscanning : press shift+/-  or something and number under cursor
+    will be incremented/decremented
+  - popup window with setup for demon timetemplates/macro's
+  - timescanning : easy increment/decrement of timing
+    (So getting length of CF and Seize right will be easier)
+
+
+   send any remarks you got on improving this program to
+
+                 itsme@utopia.hacktic.nl
+
