@@ -1,0 +1,16 @@
+!    on/off hook
+#   tone
+*   tone
+,    long pause
+-    ignored
+.    end of string
+0-9 tone
+=    timing def (:, _, ,, A-Z, !:{O, P, S, M})
+A-Z  timingdef
+^    modeswitch (p=pulse, t=tone)
+_    pause
+a-l tone
+|    play while pressed
+~    no pause
+
+
