@@ -1,0 +1,23 @@
+short documentation for PULSE
+
+usage:
+   pulse number
+
+where number is a string consisting of
+  0123456789  :  10, 1, 2, ... 9  pulses
+  abcde-z     :  11, .... 37  pulses
+
+first PULSE will put phone on hook,  then off hook,
+ then pulse the number.
+
+
+future:   - make timing adjustable, now pulsing is at almost the fastest
+            rate possible where I live.
+          - on/off hook optional
+          - incorporate in demon program
+
+
+   send any remarks you got on improving this program to
+
+                 itsme@utopia.hacktic.nl
+
