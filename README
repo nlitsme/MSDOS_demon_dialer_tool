@@ -1,0 +1,27 @@
+demon   : background demondialer control program
+tikken  : background cost pulse counter
+pulse   : pulse dial program
+
+These three fine programs written by ITSME, require special hardware to
+function, without they are completely useless.
+
+This special hardware consists of
+   - a demon dialer, with rs232 interface
+   - a cost pulse counter
+
+
+they way I use DEMON:
+  I enter some file with qedit, enter some of the numbers + mode switches
+  I use most frequently hop around with cursor between them, .....
+  in a second file / window I make notes of what I am dialing/scanning.
+
+ with TIKKEN in the upper left corner of the screen it is easy to check
+ whether your activities have been fruitful or not.
+
+remark on PULSE :   pulsing an 'A' (11 pulses) is the same as dtmf 'A'
+   (at least where I live it is)
+
+itsme
+
+Email :  itsme@utopia.hacktic.nl
+
